@@ -4,7 +4,7 @@ Lector no-oficial del comic Bunsen (http://heroeslocales.com/bunsen) para Androi
 
 Descarga
 =============
-Pueden descargar el .apk listo para instalar en sus dispositivos aqui.
+Pueden descargar el .apk listo para instalar en sus dispositivos aqui: https://play.google.com/store/apps/details?id=com.calderonpale.lectorbunsen
 
 ComicViewer
 =============
