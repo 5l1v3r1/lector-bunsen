@@ -1,7 +1,6 @@
 lector-bunsen
 =============
 Lector del comic Bunsen (http://heroeslocales.com/bunsen) para Android.
-<img style="float:center;width:80%" src="https://github.com/cldrn/wardrive-analytics/raw/master/map/wardrivemap_clusters.png" />
 
 Descarga
 =============
