@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">LectorBunsen</string>
+<string name="app_bookmarks_label">Favoritos</string>
+<string name="app_archive_label">Favoritos</string>
+<string name="app_prefs_label">Preferencias</string>
+<string name="aboutText">
+LectorBunsen es una aplicación basada en el lector "ComicViewer"
+</string>
+</resources>
