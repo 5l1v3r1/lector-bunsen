@@ -5,6 +5,14 @@
 <string name="app_archive_label">Favoritos</string>
 <string name="app_prefs_label">Preferencias</string>
 <string name="aboutText">
-LectorBunsen es una aplicación basada en el lector "ComicViewer"
+Esta aplicación es un lector no-oficial del comic Bunsen (http://heroeslocales.com/bunsen/) creado por Jorge Pinto. 
+\n\n
+Si tienen dudas o les gustaria contribuir a esta aplicacion manden un correo a paulino@calderonpale.com\n\n
+Comic Viewer\n
+Este proyecto usa la librería "ComicViewer" (https://github.com/tcoxon/ComicViewer) de tcoxon. \n\n
+Codigo fuente y recursos\n
+Pueden encontrar el codigo fuente de esta aplicacion en https://github.com/cldrn/lector-bunsen bajo licencia GPL. 
+El icono es un recorte de una imagen original de Jorge Pinto y se encuentra disponible en el mismo repositorio bajo licencia
+ Creative Commons. 
 </string>
 </resources>
