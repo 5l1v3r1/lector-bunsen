@@ -58,7 +58,7 @@ public class BunsenComicProvider implements IComicProvider {
     @Override
     public IComicInfo fetchComicInfo(Uri url) throws Exception {
         
-        Document doc = Jsoup.connect(url.toString()).timeout(10 * 1000).get();
+        Document doc = Jsoup.connect(url.toString()).timeout(30 * 1000).get();
         String img=imageFromUrl(doc);
         BunsenComicInfo data = new BunsenComicInfo();
         data.img=Uri.parse(img);
@@ -77,7 +77,7 @@ public class BunsenComicProvider implements IComicProvider {
 
     @Override
     public Uri getFinalComicUrl() {
-       topId = 0;
+       topId = 300;
         try {
         	InputStream input = new URL("http://www.google.com/reader/api/0/stream/contents/feed/http://feeds.feedburner.com/Bunsen?c=default&n=1").openStream();
 
@@ -108,31 +108,24 @@ public class BunsenComicProvider implements IComicProvider {
         List<ArchiveItem> archiveItems = new ArrayList<ArchiveItem>();
         return archiveItems;
     }
-    public String convertStreamToString(InputStream is)
-    throws IOException {
-//
-// To convert the InputStream to String we use the
-// Reader.read(char[] buffer) method. We iterate until the
-// Reader return -1 which means there's no more data to
-// read. We use the StringWriter class to produce the string.
-//
-if (is != null) {
-    Writer writer = new StringWriter();
+    public String convertStreamToString(InputStream is) throws IOException {
+    	if (is != null) {
+    		Writer writer = new StringWriter();
 
-    char[] buffer = new char[1024];
-    try {
-        Reader reader = new BufferedReader(
-                new InputStreamReader(is, "UTF-8"));
-        int n;
-        while ((n = reader.read(buffer)) != -1) {
-            writer.write(buffer, 0, n);
-        }
-    } finally {
-        is.close();
+    		char[] buffer = new char[1024];
+    		try {
+    			Reader reader = new BufferedReader(
+    					new InputStreamReader(is, "UTF-8"));
+    			int n;
+    			while ((n = reader.read(buffer)) != -1) {
+    				writer.write(buffer, 0, n);
+    			}
+    		} finally {
+    		is.close();
+    	}
+    	return writer.toString();
+    	} else {        
+    		return "";
+    	}
     }
-    return writer.toString();
-} else {        
-    return "";
-}
-}
 }
