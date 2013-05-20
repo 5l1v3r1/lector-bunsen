@@ -1,6 +1,7 @@
 lector-bunsen
 =============
 Lector no-oficial del comic Bunsen (http://heroeslocales.com/bunsen) para Android.
+<img src="https://raw.github.com/cldrn/lector-bunsen/master/Screenshot.png" width="50%" />
 
 Descarga
 =============
